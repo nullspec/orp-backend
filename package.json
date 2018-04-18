@@ -1,0 +1,45 @@
+{
+  "name": "orp-backend",
+  "version": "1.0.0",
+  "description": "Backend Open Registraton Platform",
+  "main": "src/server.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "export NODE_ENV=development && webpack -wd & nodemon --exec babel-node src/index.js",
+    "start": "node public/bundle.js",
+    "test": "mocha --require babel-register --require babel-polyfill"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nullspec/orp-build-backend.git"
+  },
+  "keywords": [
+    "Node",
+    "ES6",
+    "Registration",
+    "Open"
+  ],
+  "author": "Nick Pate",
+  "bugs": {
+    "url": "https://github.com/nullspec/orp-build-backend/issues"
+  },
+  "homepage": "https://github.com/nullspec/orp-build-backend#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "mocha": "^5.1.0",
+    "nodemon": "^1.17.3",
+    "supertest": "^3.0.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
