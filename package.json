@@ -1,13 +1,14 @@
 {
   "name": "orp-backend",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Backend Open Registraton Platform",
   "main": "src/server.js",
   "license": "MIT",
   "scripts": {
     "dev": "export NODE_ENV=development && webpack -wd & nodemon --exec babel-node src/index.js",
     "start": "node public/bundle.js",
-    "test": "mocha --require babel-register --require babel-polyfill"
+    "test": "mocha --require babel-register --require babel-polyfill",
+    "release": "standard-version"    
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
   },
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "standard-version": "^4.4.0"
   }
 }
